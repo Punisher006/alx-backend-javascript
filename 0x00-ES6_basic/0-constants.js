@@ -3,6 +3,9 @@ export function taskFirst() {
   return task;
 }
 
+import { getLast } from './0-main.js';  // Assuming getLast() is imported from the correct module
+}
+
 export function getLast() {
   return ' is okay';
 }
