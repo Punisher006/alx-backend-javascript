@@ -1,9 +1,9 @@
+// File: 0-constants.js
+
 export function taskFirst() {
   const task = 'I prefer const when I can.';
-  return task;
-}
-
-import { getLast } from './0-main.js';  // Assuming getLast() is imported from the correct module
+  const ending = getLast();
+  return `${task} ${ending}`;
 }
 
 export function getLast() {
@@ -12,7 +12,8 @@ export function getLast() {
 
 export function taskNext() {
   let combination = 'But sometimes let';
-  combination += getLast();
+  const ending = getLast();
+  combination += ending;
 
   return combination;
 }
