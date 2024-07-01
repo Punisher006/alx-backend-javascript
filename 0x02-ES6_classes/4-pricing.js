@@ -16,7 +16,6 @@ export default class Pricing {
     }
     this._amount = value;
   }
-
   /**
    * @returns {Currency}
    */
@@ -45,5 +44,4 @@ export default class Pricing {
       throw new TypeError('conversionRate must be a number');
     }
     return amount * conversionRate;
-  }
 }
